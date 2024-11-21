@@ -10,3 +10,7 @@ php artisan migrate
 
 ### router api
 buka folder route > api.php
+
+### url form pengisian data
+http://127.0.0.1:8000/
+http://127.0.0.1:8000/article/create
