@@ -8,6 +8,9 @@
 ### generate table databse
 #### php artisan migrate
 
+### Isi path gambar saran kedalam database
+#### php artisan db:seed
+
 ### router api
 #### buka folder route > api.php
 
