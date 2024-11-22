@@ -37,21 +37,21 @@ return [
             'throw' => false,
         ],
 
-        // 'public' => [
-        //     'driver' => 'local',
-        //     'root' => storage_path('app/public'),
-        //     'url' => env('APP_URL').'/storage',
-        //     'visibility' => 'public',
-        //     'throw' => false,
-        // ],
-
         'public' => [
             'driver' => 'local',
-            'root' => base_path('../sibayi.lisamann.my.id/upload'),
-            'url' => env('APP_URL') . '/upload',
+            'root' => storage_path('app/public'),
+            'url' => env('APP_URL').'/storage',
             'visibility' => 'public',
             'throw' => false,
         ],
+
+        // 'public' => [
+        //     'driver' => 'local',
+        //     'root' => base_path('../sibayi.lisamann.my.id/upload'),
+        //     'url' => env('APP_URL') . '/upload',
+        //     'visibility' => 'public',
+        //     'throw' => false,
+        // ],
 
 
         's3' => [
