@@ -23,7 +23,7 @@ class DatabaseSeeder extends Seeder
 
         for ($i = 1; $i <= 8; $i++) {
             Saran::create([
-                'image' => 'saran/saran' . $i . '.jpg',
+                'image' => 'saran/saran-' . $i . '.jpg',
             ]);
         }
     }
