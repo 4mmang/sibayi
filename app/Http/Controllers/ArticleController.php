@@ -16,20 +16,20 @@ class ArticleController extends Controller
         $sampul = $request->file('sampul')->store('sampul', 'public');
         
         $deskripsi = $request->deskripsi;
-        $dom = new DOMDocument();
-        $dom->loadHTML($deskripsi, 9);
+        // $dom = new DOMDocument();
+        // $dom->loadHTML($deskripsi, 9);
 
-        $images = $dom->getElementsByTagName('img');
+        // $images = $dom->getElementsByTagName('img');
 
-        foreach ($images as $key => $img) {
-            $data = base64_decode(explode(',', explode(';', $img->getAttribute('src'))[1])[1]);
-            $image_name = '/upload/' . time() . $key . '.png';
-            file_put_contents(public_path() . $image_name, $data);
+        // foreach ($images as $key => $img) {
+        //     $data = base64_decode(explode(',', explode(';', $img->getAttribute('src'))[1])[1]);
+        //     $image_name = '/upload/' . time() . $key . '.png';
+        //     file_put_contents(public_path() . $image_name, $data);
 
-            $img->removeAttribute('src');
-            $img->setAttribute('src', url($image_name));
-        }
-        $deskripsi = $dom->saveHTML();
+        //     $img->removeAttribute('src');
+        //     $img->setAttribute('src', url($image_name));
+        // }
+        // $deskripsi = $dom->saveHTML();
 
         Article::create([
             'judul' => $request->judul,
