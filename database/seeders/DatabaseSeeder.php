@@ -21,12 +21,11 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
-
-        // User::create([
-        //     'name' => 'Arman Umar',
-        //     'email' => 'ammangdeveloper@gmail.com',
-        //     'password' => Hash::make('12345')
-        // ]);
+        User::create([
+            'name' => 'Arman Umar',
+            'email' => 'ammangdeveloper@gmail.com',
+            'password' => Hash::make('12345')
+        ]);
 
         // for ($i = 1; $i <= 8; $i++) {
         //     Saran::create([
