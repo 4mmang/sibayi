@@ -6,6 +6,7 @@ use App\Models\Saran;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
 
 class DatabaseSeeder extends Seeder
 {
@@ -21,10 +22,16 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
-        for ($i = 1; $i <= 8; $i++) {
-            Saran::create([
-                'image' => 'saran/saran-' . $i . '.jpg',
-            ]);
-        }
+        // User::create([
+        //     'name' => 'Arman Umar',
+        //     'email' => 'ammangdeveloper@gmail.com',
+        //     'password' => Hash::make('12345')
+        // ]);
+
+        // for ($i = 1; $i <= 8; $i++) {
+        //     Saran::create([
+        //         'image' => 'saran/saran-' . $i . '.jpg',
+        //     ]);
+        // }
     }
 }
